@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Effet menu Slide en CSS 3 et Javascript Vanilla</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Exo:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="js/swipe-menu.js" async></script>
+</head>
+<body>
+<nav id="menu">
+	<ul>
+		<li><a href="#">Item 1</a></li>
+		<li><a href="#">Item 2</a></li>
+		<li><a href="#">Item 3</a></li>
+		<li><a href="#">Item 4</a></li>
+		<li><a href="#">Item 5</a></li>
+	</ul>
+</nav>
+
+<div id="container">
+	<header id="header">
+		<a href="#"><img src="images/logotv.png" alt="Logo"/></a>
+
+		<div id="menu-burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</header>
+
+	<main id="main-block">
+		<header id="main-title">
+			<h1>Material UX Design</h1>
+			<h2>And just design...</h2>
+		</header>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc diam, egestas id pulvinar ac, vestibulum faucibus mi. Nam sit amet erat consectetur, condimentum ligula ac, blandit lectus. Praesent vitae tellus mollis, porttitor felis ac, condimentum tellus. Donec vulputate accumsan laoreet. Proin eget suscipit nisl. Curabitur nec mattis odio. Suspendisse potenti.</p>
+		<p>Cras volutpat et sem a feugiat. Vestibulum feugiat nunc id nibh rutrum vestibulum at eu lorem. Vivamus consequat imperdiet nibh, a tincidunt urna. Sed porta erat et ullamcorper facilisis. Curabitur rutrum quis neque et tempor. Proin lobortis nulla vitae erat tempor, non tempor nisi dapibus.</p>
+	</main>
+
+	<div id="second-block">
+		<aside id="google-maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67478.46023836813!2d-74.02389886326044!3d40.746145899278815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x237f9f8ca2314b3!2sThe+Logo+Company!5e0!3m2!1sfr!2sfr!4v1546768879665" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</aside>
+		<form method="post" id="contact-form">
+			<div class="form-header">
+				<h2>Contact form</h2>
+				<p>Vestibulum vel vehicula dolor, in suscipit nibh. Maecenas at odio cursus dui placerat viverra nec ut augue. Donec placerat leo et mi gravida ornare. Fusce nisi ipsum, laoreet a risus id, fermentum bibendum magna.</p>
+			</div>
+			<div class="form-block">
+				<label>Complete name</label>
+				<input type="text" name="name" placeholder="Your name" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Phone number</label>
+				<input type="tel" name="phone" placeholder="Your phone number" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Object</label>
+				<input type="text" name="object" placeholder="Object of the message" value=""/>
+			</div>
+			<div class="form-block">
+				<label>Message</label>
+				<textarea name="message" placeholder="Your message"></textarea>
+			</div>
+			<div class="form-block form-button">
+				<input type="button" name="send" value="Send"/>
+			</div>
+		</form>
+	</div>
+
+	<footer id="footer">
+		<p id="rights">All rights reserved &copy; Mathieu Chartier 2019</p>
+	</footer>
+</div>
+</body>
+</html>

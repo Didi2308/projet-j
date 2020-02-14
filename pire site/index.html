@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>johnny4ever</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="app.js"></script>
+</head>
+<body>
+
+    <div id='mouseTarget'>
+        <ul id="unorderedList">
+         <li>No events yet!</li>
+        </ul>
+       </div>
+
+    <div id="register-popup" class="hidden">
+        <h1>passe ton nom looooooo</h1>
+
+        <label for="avatar">choisi ta foto mon bezo </label>
+
+        <input type="file"
+             id="upload-img" name="avatar"
+             accept="image/png, image/jpeg, image/gif"
+             onchange="showPreview(this)">
+
+             <img src="" id="preview">
+
+        <form action="" id="name-form">
+            <input type="text" value="t ki?">
+
+            <button type="reset">suivan</button>
+            <button type="submit">rezaite</button>
+        </form>
+
+        <form action="" id="second-form" class="hidden">
+            <h2>t sur ?</h2>
+            <button type="submit">ui</button>
+        </form>
+    </div>
+
+    <!--<img src="johnny-harley.gif" alt="">-->
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h3>tchate</h3>
+      
+          <label for="msg"><b>msg loooooooooooooooooo</b></label>
+          <textarea placeholder="ecri ton msg" name="msg" required></textarea>
+      
+          <button type="submit" class="btn cancel">envoié</button>
+          <button type="button" class="btn" onclick="closeForm()">fermé</button>
+        </form>
+      </div>
+
+    <div class="harley">
+        <img src="harley.gif" alt="">
+    </div>
+
+    <div class="visit-box">
+        <h3><span id="visit-count"></span> visites aujourdhui</h3>
+    </div>
+</body>
+</html>

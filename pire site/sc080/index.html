@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Scripts javascript : Aperçu</title>
+<script language=javascript>
+//largeur
+var mswidth=250;
+//hauteur
+var msheight=60;
+//temps d'affichage
+var mspause=1000;
+//temps d'effacement
+var msspeed=200;
+//couleur arrière plan
+var bcolor='#ffffcc'; 
+
+var singlemessages='<font face="Verdana" size="2" color="#000080"><div align="center">Message<br><br><b>clignotant</b></div></font>'
+var kkk=0;var timer1 = null;var timer2 = null;function startb(){if(document.all){iens6div=ieNS6sliderb;iens6marquee11();}else if(document.layers){ns4layerb=document.ns4sliderb0.document.ns4sliderb1;ns4layerb.visibility='show';ns4marquee11();}else if(document.getElementById){iens6div=document.getElementById('ieNS6sliderb');iens6marquee11(iens6div);}}function iens6marquee11(){iens6div.innerHTML=singlemessages;timer1=setTimeout("iens6marquee12(iens6div.style.top=msheight)",mspause);return;}function iens6marquee12(){timer2=setTimeout("iens6marquee11(iens6div.style.top=0)",msspeed);return;}function ns4marquee11(){ns4layerb.document.write(singlemessages);ns4layerb.document.close();timer1=setTimeout("ns4marquee12(ns4layerb.top=msheight)",mspause);return;}function ns4marquee12(){timer2=setTimeout("ns4marquee11(ns4layerb.top=0)",msspeed);return;}
+</SCRIPT>
+</head>
+<BODY onLoad="startb()" bgcolor="#FFFFFF">
+
+<br /><p class="tt" >Message clignotant</p><br /><br />
+
+<script language="JavaScript">document.write('<table align="center" border=2 CELLSPACING="0" CELLPADDING="0"><tr><td width='+mswidth+'>');
+if(document.all||document.getElementById){document.write('<div style="position:relative;overflow:hidden;width:'+mswidth+';height:'+msheight+';background-color:'+bcolor+';" onMouseover="if (timer1!=null){ clearTimeout(timer1);iens6div.style.top=0; kkk=1;} if (timer2!=null) {kkk=1; clearTimeout(timer2);}" onMouseout="if (kkk==1) { kkk=0; timer2=setTimeout(\'iens6marquee11(iens6div.style.top=0)\',msspeed);}"><div id="ieNS6sliderb" style="position:relative;width:'+mswidth+';height:'+msheight+';"></div></div>')}
+</script>
+<ilayer id="ns4sliderb0" width=&{mswidth}; height=&{msheight}; bgcolor=&{bcolor};>
+<layer id="ns4sliderb1" width=&{mswidth}; height=&{msheight}; onMouseover='if (timer1!=null){ clearTimeout(timer1); ns4layerb.top=0; kkk=1;} if (timer2!=null){ kkk=1; clearTimeout(timer2); }' onMouseout='if (kkk==1) {kkk=0; timer2=setTimeout("ns4marquee11(ns4layerb.top=0)",msspeed);}'>
+</layer></ilayer></td></tr></table>
+
+</body>
+</html>
